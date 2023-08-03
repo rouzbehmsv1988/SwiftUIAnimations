@@ -15,6 +15,8 @@
 		D5718A012A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A002A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift */; };
 		D5718A032A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A022A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift */; };
 		D5718A102A7B9DCA00F101BB /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */; };
+		D5718A122A7C0D7F00F101BB /* matrix code nfi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5718A112A7C0D7F00F101BB /* matrix code nfi.ttf */; };
+		D5718A152A7C14C000F101BB /* MatrixBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A142A7C14C000F101BB /* MatrixBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		D5718A002A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAndAnimationsUITests.swift; sourceTree = "<group>"; };
 		D5718A022A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAndAnimationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
+		D5718A112A7C0D7F00F101BB /* matrix code nfi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "matrix code nfi.ttf"; sourceTree = "<group>"; };
+		D5718A132A7C0DBC00F101BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5718A142A7C14C000F101BB /* MatrixBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 		D57189D82A7B9D8C00F101BB = {
 			isa = PBXGroup;
 			children = (
+				D5718A112A7C0D7F00F101BB /* matrix code nfi.ttf */,
 				D57189E32A7B9D8C00F101BB /* ShapesAndAnimations */,
 				D57189F52A7B9D8D00F101BB /* ShapesAndAnimationsTests */,
 				D57189FF2A7B9D8D00F101BB /* ShapesAndAnimationsUITests */,
@@ -97,12 +103,14 @@
 		D57189E32A7B9D8C00F101BB /* ShapesAndAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				D5718A132A7C0DBC00F101BB /* Info.plist */,
 				D57189E42A7B9D8C00F101BB /* ShapesAndAnimationsApp.swift */,
 				D57189E62A7B9D8C00F101BB /* ContentView.swift */,
 				D57189E82A7B9D8D00F101BB /* Assets.xcassets */,
 				D57189EA2A7B9D8D00F101BB /* ShapesAndAnimations.entitlements */,
 				D57189EB2A7B9D8D00F101BB /* Preview Content */,
 				D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */,
+				D5718A142A7C14C000F101BB /* MatrixBackgroundView.swift */,
 			);
 			path = ShapesAndAnimations;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5718A122A7C0D7F00F101BB /* matrix code nfi.ttf in Resources */,
 				D57189ED2A7B9D8D00F101BB /* Preview Assets.xcassets in Resources */,
 				D57189E92A7B9D8D00F101BB /* Assets.xcassets in Resources */,
 			);
@@ -263,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57189E72A7B9D8C00F101BB /* ContentView.swift in Sources */,
+				D5718A152A7C14C000F101BB /* MatrixBackgroundView.swift in Sources */,
 				D57189E52A7B9D8C00F101BB /* ShapesAndAnimationsApp.swift in Sources */,
 				D5718A102A7B9DCA00F101BB /* PolygonShape.swift in Sources */,
 			);
@@ -421,6 +431,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShapesAndAnimations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShapesAndAnimations/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +468,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ShapesAndAnimations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShapesAndAnimations/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

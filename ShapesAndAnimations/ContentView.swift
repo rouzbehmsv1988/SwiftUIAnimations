@@ -22,20 +22,26 @@ struct ContentView: View {
     }
     var body: some View {
         ZStack{
-            if thirdLevelClicked {
-                Image("MatrixPills").background(.white).scaleEffect(forthLevelClicked ? 0.3: 0).opacity(forthLevelClicked ? 1.0: 0.0).animation(.easeOut(duration: 4.0), value: forthLevelClicked).onAppear{
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                        forthLevelClicked.toggle()
-                        firstLevelClicked.toggle()
-                    })
+            VStack {
+                if thirdLevelClicked {
+                    Text("What we see is just a fraction of reality").font(.system(size: 30)).foregroundColor(.green).opacity(forthLevelClicked ? 1.0: 0).animation(Animation.easeInOut(duration: 10), value: forthLevelClicked).padding()
+                    Image("Matrix2").background(.white).scaleEffect(forthLevelClicked ? 0.8: 0).animation(.easeOut(duration: 4.0), value: forthLevelClicked).onAppear{
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                            forthLevelClicked.toggle()
+                            firstLevelClicked.toggle()
+                        })
+                    }
+                    
                 }
+                
             }
+
             ZStack {
                 VStack {
                     if !firstLevelClicked {
-                        Text("Play Me").font(.largeTitle).foregroundColor(.red).offset(y: bounce ? 0 : -5).animation(.interpolatingSpring(stiffness: 100, damping: 5, initialVelocity: 10).repeatForever())
+                        Text("Play Me").font(.largeTitle).foregroundColor(.red).offset(y: bounce ? 0 : -10).animation(.interpolatingSpring(stiffness: 100, damping: 5, initialVelocity: 100).repeatForever())
                     }
-                    playButton(third: thirdLevelClicked).scaleEffect(firstLevelClicked ? 20.0 :0.7 ).rotationEffect( firstLevelClicked ? Angle(degrees: 360): Angle(degrees: 0)).opacity(firstLevelClicked ? 0.5: 1.0).animation(.easeOut(duration: 2.0), value: firstLevelClicked).onTapGesture {
+                    playButton(third: thirdLevelClicked).scaleEffect(firstLevelClicked ? 20.0 :0.7 ).rotationEffect( firstLevelClicked ? Angle(degrees: 360): Angle(degrees: 0)).opacity(firstLevelClicked ? 0.5: 1.0).animation(.easeOut(duration: 3.0), value: firstLevelClicked).onTapGesture {
                         if !firstLevelClicked {
                             firstLevelClicked.toggle()
                         }
@@ -47,10 +53,10 @@ struct ContentView: View {
                 }
                 VStack {
                     Text("SwiftUI")
-                        .font(.system(size: 60))
+                        .font(.system(size: 60)).foregroundColor(.white)
                         .background(Color.clear).animation(Animation.easeInOut(duration: 2.0), value: firstLevelClicked)
                         .offset(x: self.firstLevelClicked ? 0 : 400)
-                    Text("is amazing")
+                    Text("is amazing").foregroundColor(.white)
                         .font(.system(size: 60))
                         .background(Color.clear)
                         .animation(Animation.easeInOut(duration: 2.0), value: firstLevelClicked)
@@ -66,9 +72,9 @@ struct ContentView: View {
                         }.rotation3DEffect(.degrees(SecondLevelClicked ? 360: 1), axis: (x: 0, y: SecondLevelClicked ? 1: 0, z: 0)).animation(.easeOut(duration: 2).speed(1.5).repeatForever(autoreverses: false), value: SecondLevelClicked)
                 }
                 
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).scaleEffect(thirdLevelClicked ? 0.008: 1.0).offset(x: thirdLevelClicked ? -80: 0, y: thirdLevelClicked ? 75: 0).animation(.easeOut(duration: 4.0), value: thirdLevelClicked)
+            }.background(.black).frame(maxWidth: .infinity, maxHeight: .infinity).scaleEffect(thirdLevelClicked ? 0.004: 1.0).offset(x: thirdLevelClicked ? -100: 0, y: thirdLevelClicked ? 70: 0).animation(.easeOut(duration: 4.0), value: thirdLevelClicked)
                 
-        }
+        }.background(.black)
     }
 }
 

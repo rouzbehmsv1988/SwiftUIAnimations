@@ -14,6 +14,7 @@
 		D57189F72A7B9D8D00F101BB /* ShapesAndAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57189F62A7B9D8D00F101BB /* ShapesAndAnimationsTests.swift */; };
 		D5718A012A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A002A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift */; };
 		D5718A032A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A022A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift */; };
+		D5718A102A7B9DCA00F101BB /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D57189FC2A7B9D8D00F101BB /* ShapesAndAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapesAndAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5718A002A7B9D8D00F101BB /* ShapesAndAnimationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAndAnimationsUITests.swift; sourceTree = "<group>"; };
 		D5718A022A7B9D8D00F101BB /* ShapesAndAnimationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesAndAnimationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D57189E82A7B9D8D00F101BB /* Assets.xcassets */,
 				D57189EA2A7B9D8D00F101BB /* ShapesAndAnimations.entitlements */,
 				D57189EB2A7B9D8D00F101BB /* Preview Content */,
+				D5718A0F2A7B9DCA00F101BB /* PolygonShape.swift */,
 			);
 			path = ShapesAndAnimations;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				D57189E72A7B9D8C00F101BB /* ContentView.swift in Sources */,
 				D57189E52A7B9D8C00F101BB /* ShapesAndAnimationsApp.swift in Sources */,
+				D5718A102A7B9DCA00F101BB /* PolygonShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
